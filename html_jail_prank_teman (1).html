@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>⚠️ Sistem Keamanan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: black;
+      color: #00ff00;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      text-align: center;
+      border: 2px solid #00ff00;
+      padding: 30px;
+      width: 400px;
+      box-shadow: 0 0 20px #00ff00;
+    }
+    h1 {
+      color: red;
+    }
+    .loading {
+      margin-top: 20px;
+      font-size: 14px;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    button {
+      margin-top: 25px;
+      padding: 10px 20px;
+      background: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: darkred;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>🚨 PERINGATAN 🚨</h1>
+    <p>Sistem mendeteksi aktivitas mencurigakan.</p>
+    <p><b>Perangkat ini sedang dikunci!</b></p>
+    <div class="loading">Mengirim data ke server pusat...</div>
+    <button onclick="bukaPrank()">UNLOCK</button>
+  </div>
+
+  <script>
+    function bukaPrank() {
+      alert("😂 Selamat anda kena prank wkwk😆");
+      document.body.innerHTML = "<h1 style='color:white;text-align:center;'>AMAN 😎<br></h1>";
+    }
+  </script>
+</body>
+</html>
